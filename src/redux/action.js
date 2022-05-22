@@ -11,3 +11,7 @@ export const fetchConvertError = createAction('fetchConvertError');
 export const fetchConvertReverce = createAction('fetchConvertReverce');
 export const fetchConvertReverceSuccess = createAction('fetchConvertReverceSuccess');
 export const fetchConvertReverceError = createAction('fetchConvertReverceError');
+
+export const fetchLatestUAHRequest = createAction('fetchLatestUAHRequest');
+export const fetchLatestUAHSuccess = createAction('fetchLatestUAHSuccess');
+export const fetchLatestUAHError = createAction('fetchLatestUAHError');

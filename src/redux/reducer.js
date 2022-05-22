@@ -12,8 +12,13 @@ const convertDataReverce = createReducer([], {
   fetchConvertReverceSuccess: (_, { payload }) => [payload],
 });
 
+const latestUAH = createReducer([], {
+  fetchLatestUAHSuccess: (_, { payload }) => [payload],
+});
+
 export default combineReducers({
   currencyData,
+  latestUAH,
   convertData,
   convertDataReverce,
 });

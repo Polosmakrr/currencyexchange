@@ -40,3 +40,15 @@ export const fetchConvertReverce = (fromCurrency, toCurrency, amount) => dispatc
 
     .catch(error => dispatch(actions.fetchConvertReverceError(error)));
 };
+
+export const fetchLatestUAH = () => dispatch => {
+  dispatch(actions.fetchLatestUAHRequest());
+
+  axios
+    .get(`${key}/latest/UAH`)
+    .then(({ data }) => {
+      dispatch(actions.fetchLatestUAHSuccess(data));
+    })
+
+    .catch(error => dispatch(actions.fetchLatestUAHError(error)));
+};
